@@ -21,12 +21,12 @@ namespace ClassiFile
 
         public override long GetDimensione()
         {
-            long somma = 0;
+            long s = 0;
             foreach (File file in files)
             {
-                somma += file.GetDimensione();
+                s += file.GetDimensione();
             }
-            return somma;
+            return s;
         }
     }
 }
